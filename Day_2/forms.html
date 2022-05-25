@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal info</legend>
+            <label for="username">Email:</label>
+            <input id="username" name="username" type="email" placeholder="email" required><br>
+
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" placeholder="password" required><br>
+
+            <label for="tel">Mobile:</label>
+            <input type="tel" name="tel" type="tel" placeholder="mobile" required><br>
+
+        </fieldset>
+        <p>Do you prefer cats or dogs?</p>
+        <label for="dogs">Dogs: </label>
+        <input name="petchoice" id="dogs" type="radio" value="DOGS">
+        <label for="cats">Cats: </label>
+        <input name="petchoice" id="cats" type="radio" value="CATS">
+
+        <p>What's your favorite colour?</p>
+        <select name="colour">
+            <option>Red</option>
+            <option>Black</option>
+            <option>White</option>
+        </select>
+
+        <p>What's your current mood?</p>
+        <select name="mood">
+            <option value="Happy">:)</option>
+            <option value="Shy">:$</option>
+            <option value="Sad">:(</option>
+        </select>
+
+        <p>Type something interesting here!</p>
+        <textarea name="paragraph" rows="10" cols="30"></textarea><br>
+
+        <p>What OS have you used?</p>
+        <input type="checkbox" id="os1" name="os1" value="Mac">
+        <label for="os1">MacOS</label><br>
+        <input type="checkbox" id="os2" name="os2" value="Windows">
+        <label for="os1">Windows</label><br>
+        <input type="checkbox" id="os3" name="os3" value="Linux">
+        <label for="os1">Linux</label><br><br>
+
+        <label for="select_date">Select date:</label>
+        <input type="date" name="date_applied" id="select_date" value="2022-05-25" min="1900-01-01"
+            max="2100-12-31"><br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
