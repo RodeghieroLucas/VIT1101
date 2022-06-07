@@ -1,0 +1,25 @@
+.bgimage {
+    background-image: url(https://images.unsplash.com/photo-1527942364978-2b826fc00de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2129&q=80);
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 30%;
+    margin-left: calc(12.5%/6);
+    padding: 1.2em 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding-top: 7em;
+}

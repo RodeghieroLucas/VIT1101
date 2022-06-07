@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Template</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #99ffa3;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: aliceblue;
+        }
+
+        /* Create two colums/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 500px;
+            /* Only for demo, should be removed */
+            background: rgb(100, 200, 32);
+            padding: 20px;
+            padding-top: 200px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            /* Only for demo, should be removed  \/ */
+            height: 500px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: rgb(255, 24, 32);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media(max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Layout Float</h2>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will
+        stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+        Responsive.)</p>
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="london">London</a></li>
+                <li><a href="paris">Paris</a></li>
+                <li><a href="tokyo">Tokyo</a></li>
+                <li><a href="ipsum">Ipsum</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1 id="london">London</h1>
+            <p>London is the capital city of England. It is the most important populous city in the United Kingdom, with
+                a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Londinium.</p>
+            <h1>Paris</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quasi quis facilis. Eius laudantium quae
+                quisquam nostrum? Sequi quae labore perspiciatis nisi, deleniti similique, fugiat ea tempore, explicabo
+                excepturi sint.</p>
+            <h1>Tokyo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id numquam culpa odit cupiditate, quasi
+                debitis accusamus quia repellendus tempora ipsa? Sint libero maiores repellat eveniet facilis at
+                doloremque doloribus!</p>
+            <h1>Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio libero provident, vitae odit
+                veritatis est architecto reiciendis, laudantium quidem voluptatem porro nostrum, saepe et autem voluptas
+                deserunt. Necessitatibus, cumque.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Footer</p>
+        <div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#puppies">Puppies</a></li>
+            </ul>
+        </div>
+        <a href="#licence">Content is available under these licences.</a>
+    </footer>
+</body>
+
+</html>
